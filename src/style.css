@@ -260,7 +260,7 @@ nav.scrolled {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2.5rem;
 }
 
@@ -492,11 +492,12 @@ footer {
   }
 
   .container {
-    padding: 0 1.25rem; /* Tighter container padding for mobile */
+    padding: 0 1.5rem;
   }
 
-  h1 { font-size: 2.8rem; }
-  h2 { font-size: 2.2rem; }
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.75rem; }
   
   .contact-grid {
     grid-template-columns: 1fr;
@@ -505,7 +506,7 @@ footer {
 
   .hero {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 80px;
   }
 
   .hero-content {
@@ -519,16 +520,17 @@ footer {
   }
 
   .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
   }
 
   .service-card {
-    padding: 2rem; /* Reduced padding from 3.5rem */
+    padding: 2rem;
     border-radius: 24px;
   }
 
   .contact-card {
-    padding: 2rem; /* Reduced padding from 4rem */
+    padding: 2rem;
   }
 
   .footer-content {
@@ -539,11 +541,22 @@ footer {
 }
 
 @media (max-width: 480px) {
-  h1 { font-size: 2.4rem; }
-  .btn { width: 100%; }
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  
+  .btn { 
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+  }
+  
   .nav-links { width: 100%; }
   
   .service-card {
-    padding: 1.5rem; /* Minimum padding for smallest screens */
+    padding: 1.5rem;
+  }
+  
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
   }
 }
