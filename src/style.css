@@ -6,13 +6,13 @@
   --brand-primary-glow: rgba(249, 115, 22, 0.2); /* Softer for light bg */
   --brand-secondary: #0ea5e9; /* Sky Blue */
   
-  /* Light Mode Base */
-  --bg-deep: #e7e0e0;
-  --bg-surface: #bebebe; /* Slate 50 */
+  /* Light Mode Base - Re-polished for 'Whitish' Premium feel */
+  --bg-deep: #f8fafc; /* Very light slate gray */
+  --bg-surface: #ffffff; /* pure white for primary surfaces */
   --bg-surface-soft: #f1f5f9; /* Slate 100 */
    
   /* Glassmorphism - Adjusted for Light Theme */
-  --glass-bg: rgb(255, 255, 255);
+  --glass-bg: rgba(255, 255, 255, 0.9);
   --glass-border: rgba(0, 0, 0, 0.05);
   --glass-highlight: rgba(255, 255, 255, 0.2);
   
@@ -491,17 +491,21 @@ footer {
     --section-padding: 4rem;
   }
 
-  h1 { font-size: 3.2rem; }
-  h2 { font-size: 2.5rem; }
+  .container {
+    padding: 0 1.25rem; /* Tighter container padding for mobile */
+  }
+
+  h1 { font-size: 2.8rem; }
+  h2 { font-size: 2.2rem; }
   
   .contact-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
 
   .hero {
     text-align: center;
-    padding-top: 120px;
+    padding-top: 100px;
   }
 
   .hero-content {
@@ -510,14 +514,21 @@ footer {
 
   .hero-actions {
     justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .services-grid {
+    gap: 1.5rem;
   }
 
   .service-card {
-    padding: 2.5rem;
+    padding: 2rem; /* Reduced padding from 3.5rem */
+    border-radius: 24px;
   }
 
   .contact-card {
-    padding: 2.5rem;
+    padding: 2rem; /* Reduced padding from 4rem */
   }
 
   .footer-content {
@@ -528,7 +539,11 @@ footer {
 }
 
 @media (max-width: 480px) {
-  h1 { font-size: 2.8rem; }
+  h1 { font-size: 2.4rem; }
   .btn { width: 100%; }
   .nav-links { width: 100%; }
+  
+  .service-card {
+    padding: 1.5rem; /* Minimum padding for smallest screens */
+  }
 }
