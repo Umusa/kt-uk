@@ -10,7 +10,7 @@
   --bg-deep: #e7e0e0;
   --bg-surface: #bebebe; /* Slate 50 */
   --bg-surface-soft: #f1f5f9; /* Slate 100 */
-  
+   
   /* Glassmorphism - Adjusted for Light Theme */
   --glass-bg: rgb(255, 255, 255);
   --glass-border: rgba(0, 0, 0, 0.05);
