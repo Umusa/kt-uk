@@ -2,8 +2,8 @@
 
 :root {
   /* Brand Palette - Refined for Light Theme */
-  --brand-primary: #f97316; /* Vibrant Orange */
-  --brand-primary-glow: rgba(249, 115, 22, 0.2); /* Softer for light bg */
+  --brand-primary: #0f3380; /* Vibrant Blue */
+  --brand-primary-glow: rgba(37, 99, 235, 0.2); /* Softer for light bg */
   --brand-secondary: #0ea5e9; /* Sky Blue */
   
   /* Light Mode Base - Re-polished for 'Whitish' Premium feel */
@@ -80,7 +80,7 @@ p {
 }
 
 .text-brand {
-  background: linear-gradient(135deg, var(--brand-primary) 0%, #fbbf24 100%);
+  background: linear-gradient(135deg, var(--brand-primary) 0%, #60a5fa 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -176,7 +176,7 @@ nav.scrolled {
   display: flex;
   align-items: center;
   padding-top: 100px;
-  background: radial-gradient(circle at 80% 20%, rgba(249, 115, 22, 0.05) 0%, transparent 40%),
+  background: radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.05) 0%, transparent 40%),
               radial-gradient(circle at 20% 80%, rgba(14, 165, 233, 0.05) 0%, transparent 40%);
 }
 
@@ -188,8 +188,8 @@ nav.scrolled {
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  background: rgba(249, 115, 22, 0.08); /* Lighter accent */
-  border: 1px solid rgba(249, 115, 22, 0.15);
+  background: rgba(37, 99, 235, 0.08); /* Lighter accent */
+  border: 1px solid rgba(37, 99, 235, 0.15);
   border-radius: 100px;
   color: var(--brand-primary);
   font-weight: 600;
@@ -232,7 +232,7 @@ nav.scrolled {
 
 .btn-primary:hover {
   transform: translateY(-4px);
-  background: #fb923c;
+  background: #3b82f6;
   box-shadow: 0 20px 40px var(--brand-primary-glow);
 }
 
@@ -301,7 +301,7 @@ nav.scrolled {
 .service-icon {
   width: 64px;
   height: 64px;
-  background: rgba(249, 115, 22, 0.05); /* Lighter accent */
+  background: rgba(37, 99, 235, 0.05); /* Lighter accent */
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -387,7 +387,7 @@ input:focus, textarea:focus {
   outline: none;
   background: #fff;
   border-color: var(--brand-primary);
-  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.08);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
 }
 
 /* Footer */
